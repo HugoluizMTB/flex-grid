@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+.container {
+    max-width: 1060px;
+    width: 100%;
+    margin: 70px auto;
+    background-image: linear-gradient(to bottom,#AA174C,#87288F);
+    background-attachment: fixed;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+    
+
+main section {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);    
+    
+}
+.card1 { 
+    grid-column: span 2;
+}
+
+.card2 {
+    grid-column: span 2;
+}
+
+.card3 {
+    grid-column: span 3;
+}
+
+main section:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
